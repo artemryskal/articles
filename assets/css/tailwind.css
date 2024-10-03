@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary;
+  }
+
+  a {
+    height: fit-content;
+  }
+
+  /* Текстовые блоки */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-primary;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1320px] w-full my-0 mx-auto;
+  }
+
+  .button {
+    @apply flex justify-center items-center bg-accent px-7 py-3 font-secondary font-bold;
+  }
+
+  .icon {
+    @apply w-[20px] h-[20px];
+  }
+}
