@@ -22,20 +22,45 @@
   }
 
   h1 {
-    @apply text-5xl;
+    @apply text-5xl leading-[56px];
+  }
+
+  h3 {
+    @apply text-[32px] mb-[30px];
   }
 }
 
 @layer components {
   .container {
-    @apply max-w-[1320px] w-full my-0 mx-auto;
+    @apply max-w-[1320px] w-full my-0 mx-auto px-8;
   }
 
   .button {
-    @apply flex justify-center items-center bg-accent px-7 py-3 font-secondary font-bold;
+    @apply flex justify-center items-center bg-accent px-7 py-3 font-secondary font-bold text-text;
   }
 
   .icon {
     @apply w-[20px] h-[20px];
+  }
+
+  .section {
+    @apply pt-[60px];
+  }
+
+  .section__title {
+    @apply mb-[60px];
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
