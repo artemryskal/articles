@@ -6,7 +6,8 @@ export default <Partial<Config>>{
     colors: {
       primary: '#EDECFF',
       body: '#FFFFFF',
-      'body-text': '#333333',
+      text: '#333333',
+      lighter: '#656565',
       accent: '#FBF3EB',
     },
     extend: {

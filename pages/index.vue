@@ -1,3 +1,8 @@
 <template>
-  <div>index</div>
+  <div>
+    <!-- Последние новости -->
+    <IndexLast />
+    <!-- Предложение написать на почту -->
+    <IndexEmail />
+  </div>
 </template>

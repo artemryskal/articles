@@ -11,10 +11,24 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxt/image'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/eslint',
+    '@nuxt/image',
+    '@nuxt/icon',
+    '@vueuse/nuxt',
+  ],
 
   image: {
     dir: 'assets',
+  },
+  icon: {
+    customCollections: [
+      {
+        prefix: 'icon',
+        dir: './assets/icons',
+      },
+    ],
   },
 
   compatibilityDate: '2024-10-04',

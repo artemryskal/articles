@@ -1,7 +1,7 @@
 <template>
-  <div class="default-layout">
+  <div class="article-layout">
     <!-- Шапка -->
-    <HeaderBase />
+    <HeaderBase dark />
 
     <!-- Контент -->
     <main>
